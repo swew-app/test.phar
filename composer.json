@@ -42,7 +42,7 @@
         "ext-json": "*"
     },
     "scripts": {
-        "build": "./box.phar compile --no-parallel",
+        "build": "@php -d phar.readonly=0 -d error_reporting='E_ALL & ~E_DEPRECATED & ~E_USER_DEPRECATED' ./box.phar compile --no-parallel --no-restart",
         "test": "./t"
     }
 }
