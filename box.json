@@ -22,8 +22,10 @@
                 "test_old",
                 "tests",
                 "Tests",
-                "vendor-bin"
+                "vendor-bin",
+                "vendor"
             ],
+            "followLinks": true,
             "in": "./vendor/swew"
         }
     ]

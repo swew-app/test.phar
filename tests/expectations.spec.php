@@ -56,7 +56,7 @@ it('toBeGreaterThanOrEqual', function () {
     expect(0)->toBeGreaterThanOrEqual(-1);
     expect(0)->toBeGreaterThanOrEqual(0);
     expect(0)->not()->toBeGreaterThanOrEqual(1);
-    expect(1)->not()->toBeGreaterThanOrEqual(1);
+    expect(-1)->not()->toBeGreaterThanOrEqual(0);
 });
 
 it('toBeLessThan', function () {
@@ -67,7 +67,7 @@ it('toBeLessThan', function () {
 it('toBeLessThanOrEqual', function () {
     expect(0)->toBeLessThanOrEqual(0);
     expect(0)->toBeLessThanOrEqual(1);
-    expect(0)->not()->toBeLessThanOrEqual(0);
+    expect(1)->not()->toBeLessThanOrEqual(0);
     expect(0)->not()->toBeLessThanOrEqual(-1);
 });
 
